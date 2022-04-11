@@ -13,7 +13,7 @@ const Numbers = [1, 3, 4, 6, 7, 8];
 
 const removeEven = (Numbers, invert = false)=>{
     for(let i =0; i<Numbers.length; i++){
-        const even = arr[i] % 2 === 0;
+        const even = Numbers[i] % 2 === 0;
         if(even ^ invert){
             Numbers.splice(i--,1);
         }
